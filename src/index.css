@@ -1,0 +1,528 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.mapMarker {
+  position: fixed;
+  width: 78%;
+  margin: 0 auto;
+  height: 93vh;
+  right: 22%;
+  left: 22%;
+}
+
+.mapMarker .info-content {
+  max-width: 20%;
+}
+
+.fullscreen {
+  width: 100%;
+  position: fixed;
+  height: 93%;
+}
+
+.fullscreen .info-content {
+  max-width: 18%;
+}
+
+.navbar {
+  padding: 0 !important;
+}
+
+.info-content {
+  bottom: 42px;
+  right: 23px;
+  width: 140px;
+  height: 220px;
+  position: absolute;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 8px;
+  opacity: 0.9;
+  padding: 10px 0px;
+}
+
+.info-content img {
+  width: 28px;
+}
+
+.info {
+  margin-left: 10px;
+  text-align: justify;
+  padding-top: 10px;
+}
+
+.info-content tr td {
+  padding: 3px 3px;
+}
+
+.App {
+  display: flex;
+  position: relative;
+}
+
+.leftDrawer i {
+  font-size: 42px;
+  float: right;
+  z-index: 9999;
+  position: relative;
+  right: -26px;
+  top: 346px;
+}
+
+.leftDrawer {
+  height: 100%;
+  left: 0;
+  width: 22%;
+  z-index: 99;
+  position: fixed;
+}
+
+.rightDrawer {
+  height: 100%;
+  right: 0;
+  width: 22%;
+  z-index: 99;
+  position: fixed;
+}
+
+.hide.leftDrawer {
+  left: 0;
+  width: 0;
+  z-index: 99;
+  position: absolute;
+}
+
+.hide i {
+  margin-left: 0vh;
+}
+
+.leftDrawer-values {
+  left: 0;
+  width: 22%;
+  height: 100%;
+  position: fixed;
+  box-shadow: -5px 0px 5px -5px rgba(0, 0, 0, 0.55);
+  animation: drawer-open 1s both;
+}
+
+.rightDrawer-values {
+  right: 0;
+  width: 22%;
+  height: 100%;
+  position: fixed;
+  box-shadow: -5px 0px 5px -5px rgba(0, 0, 0, 0.55);
+  animation: drawer-open 1s both;
+}
+
+.displayNot {
+  display: none;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 16px;
+}
+
+.scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+
+.scrollbar {
+  max-height: 338px;
+  overflow-y: scroll;
+  padding-right: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .info-content {
+    right: 8%;
+    max-width: 85% !important;
+    padding-top: 12px;
+    margin: 0 auto;
+    bottom: 45px !important;
+  }
+  .fa-caret-square-left {
+    right: -158px !important;
+  }
+  img.width-20 {
+    width: 76% !important;
+  }
+  .demo {
+    display: none;
+  }
+  .drawer,
+  .drawer-values {
+    width: 96%;
+  }
+  .info {
+    display: inline-block;
+    width: 100%;
+    margin-top: 14px;
+    margin-left: 0px !important;
+  }
+  .taxiInfo {
+    padding: 8px 6px;
+    width: auto !important;
+    display: inline-block !important;
+  }
+  .taxiInfo span {
+    padding-left: 10px;
+  }
+  .taxiInfo > div {
+    padding: 0 !important;
+  }
+  .formwrapper .submit-btn {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .pd-0 {
+    padding: 0 !important;
+  }
+  .pdl-3 {
+    padding-left: 3px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .info-content {
+    max-width: 20% !important;
+  }
+  .fa-caret-square-left {
+    right: -22px !important;
+  }
+  .drawer,
+  .drawer-values {
+    width: 32%;
+  }
+  .formwrapper .submit-btn {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+img.width-20 {
+  width: 12%;
+}
+
+.navbar.bg-dark {
+  background-color: #20294a !important;
+}
+
+.searchBox h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.searchBox img {
+  width: 25px;
+}
+
+.btn-secondary,
+.btn-secondary:hover {
+  margin-left: 80%;
+}
+
+.taxiInfo {
+  display: flex;
+  width: 100%;
+  margin-bottom: 7px;
+}
+
+.taxiInfo > div {
+  float: left;
+  padding: 0px 5px;
+}
+
+.search-content {
+  padding: 22.67px;
+  text-align: center;
+  padding-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.heading {
+  border-bottom: 2px solid;
+  line-height: 55px;
+}
+
+.heading span {
+  padding: 9px 16px;
+  cursor: pointer;
+}
+
+.form-value {
+  padding: 12px 0;
+}
+
+.searchBox {
+  border-bottom: 2px solid;
+}
+
+.trip .searchBox {
+  border-bottom: none;
+}
+
+form.formwrapper {
+  padding-top: 6px;
+}
+
+.formwrapper .submit-btn {
+  background: none !important;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.dropdown-toggle::after {
+  float: right;
+  margin-top: 10px;
+}
+
+button#dropdown-basic {
+  width: 100%;
+  text-align: initial;
+  background: none;
+  border: none;
+  font-size: 14px !important;
+  padding: 4px;
+  border-bottom: 1px solid;
+  border-radius: inherit;
+}
+
+.dropdown-menu.show {
+  width: 100%;
+}
+
+.show > .btn-success.dropdown-toggle:focus {
+  box-shadow: none !important;
+}
+
+.btn-success.focus,
+.btn-success:focus {
+  box-shadow: none !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  text-decoration: none;
+}
+
+.col.pdl-36 {
+  padding-left: 36px;
+  padding-right: 0;
+}
+
+button.submit-btn.btn.btn-primary {
+  width: 100%;
+}
+
+.table {
+  text-align: left;
+}
+
+.table thead th {
+  border-top: 0 !important;
+  padding-left: 0;
+  padding-right: 22px;
+  font-size: 12px;
+  padding-bottom: 4px;
+}
+
+.table td {
+  padding-left: 0 !important;
+  padding-bottom: 4px;
+  font-size: 12px;
+  vertical-align: top;
+  padding-right: 20px;
+}
+
+.table td.borderTop {
+  border-top: none !important;
+}
+
+.detail-info {
+  border-bottom: 2px solid;
+  text-align: initial;
+  word-break: break-word;
+  font-size: 12px;
+  /* height: 34vh; */
+  height: 84vh;
+}
+
+.status-info {
+  padding-left: 28px;
+}
+
+.detail-info span {
+  line-height: 2.5;
+}
+
+.contract {
+  border-bottom: 1px solid;
+}
+
+.contract .scrollbar,
+.detail-info .scrollbar {
+  /* max-height: 256px; */
+  max-height: 100%;
+}
+
+.table-responsive.contract {
+  border-bottom: none;
+}
+
+.contract .status span {
+  border-bottom: 1px solid;
+  padding-right: 80px;
+  float: right;
+  margin-top: 18px;
+}
+
+.contract .fet {
+  font-size: 32px;
+}
+
+.contract .fet span {
+  border-bottom: 1px solid;
+  padding-right: 80px;
+  float: right;
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+.table-responsive.contract tr {
+  font-size: 12px !important;
+}
+
+.table-responsive.contract img {
+  cursor: pointer;
+  width: 15px;
+  margin-top: 14px;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  transform: translateX(0.88rem) !important;
+  left: calc(-1.75rem) !important;
+  background-color: white !important;
+  background-image: url('./lib/assets/Toggle_ON_Circle.svg');
+  background-size: auto;
+}
+
+.expand-button {
+  width: 18px !important;
+  margin-top: 3px !important;
+  float: left;
+}
+
+.custom-switch .custom-control-label::after {
+  top: calc(0.25rem + -2px) !important;
+  left: calc(-2.25rem + 0px) !important;
+  width: calc(1.1rem) !important;
+  height: calc(1.1rem) !important;
+  border-radius: 1.5rem !important;
+  background-color: #5887da !important;
+  background-image: url('./lib/assets/Toggle_OFF_Circle.svg');
+  background-size: auto;
+}
+
+.custom-switch .custom-control-label::before {
+  left: -2.25rem !important;
+  width: 2.2rem !important;
+  border-radius: 1.5rem !important;
+}
+
+.custom-control-label::before {
+  top: 0.15rem !important;
+  left: -1.5rem !important;
+  width: 1rem !important;
+  height: 1.11rem !important;
+}
+
+.custom-switch {
+  padding-left: 2.25rem;
+  padding-right: 12px;
+  margin-top: 4px;
+}
+
+span.navbar-brand {
+  margin-left: 8px;
+}
+
+.detail-info svg {
+  font-size: 14px;
+  margin-bottom: 3px;
+  margin-right: 2px;
+}
+
+.gmnoprint > div {
+  border-radius: 8px !important;
+}
+
+button.gm-control-active.gm-fullscreen-control {
+  border-radius: 8px !important;
+  margin-right: 27px !important;
+  margin-top: 34px !important;
+}
+
+table thead th:first-child {
+  width: 36%;
+}
+
+.gmnoprint.gm-bundled-control {
+  right: 57px !important;
+  top: 78px !important;
+}
+
+button.gm-control-active.gm-fullscreen-control img {
+  width: 24px !important;
+}
+
+.modal-body .row {
+  padding-bottom: 10px;
+}
+
+.filter.dropdown-menu.show {
+  top: 94%;
+  min-width: 9rem;
+  opacity: 0.9;
+  width: 95%;
+}
+
+.vl {
+  border-left: 2px solid darkgray;
+}
+
+.filter input.form-control.form-control-sm {
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.infoPick {
+  top: 8px;
+  padding: 5px;
+  position: absolute;
+  right: 36%;
+  background: antiquewhite;
+}
+
+span.help-block {
+  color: red;
+  padding: 4px;
+}

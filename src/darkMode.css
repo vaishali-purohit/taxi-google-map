@@ -1,0 +1,144 @@
+.darkMode .info-content {
+  background: #1c2846;
+  color: #ffff;
+}
+
+.darkMode .leftDrawer i {
+  color: darkgray;
+}
+
+.darkMode .leftDrawer {
+  background: #171f32;
+}
+
+.darkMode .rightDrawer {
+  background: #171f32;
+}
+
+.darkMode .leftDrawer-values {
+  background-color: whitesmoke;
+  background: #171f32;
+  color: #fff;
+}
+
+.darkMode .rightDrawer-values {
+  background-color: whitesmoke;
+  background: #171f32;
+  color: #fff;
+}
+
+.darkMode .scrollbar::-webkit-scrollbar-thumb {
+  background-color: #a0b6bf;
+}
+
+.darkMode .scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #a0b6bf;
+}
+
+.darkMode .navbar.bg-dark {
+  background-color: #20294a !important;
+}
+
+.darkMode .searchBox h2 {
+  color: whitesmoke;
+}
+
+.darkMode .btn-secondary,
+.darkMode .btn-secondary:hover {
+  color: whitesmoke !important;
+  background-color: #192541 !important;
+  border-color: #192541 !important;
+}
+
+.darkMode .heading span {
+  color: grey;
+}
+
+.darkMode .selected {
+  color: white !important;
+}
+
+.darkMode .formwrapper .submit-btn {
+  border-color: white !important;
+}
+
+.darkMode .formwrapper .submit-btn:hover {
+  background-color: #59ad9e !important;
+  border-color: #59ad9e !important;
+}
+
+.darkMode .formwrapper .holdColor {
+  background-color: #59ad9e !important;
+  border-color: #59ad9e !important;
+}
+
+.darkMode .dropdown-item:focus,
+.darkMode .dropdown-item:hover {
+  color: white !important;
+  background-color: #59ad9e !important;
+}
+
+.darkMode .table thead {
+  color: white;
+  font-size: 14px;
+}
+
+.darkMode .table td {
+  border-top: 1px solid #dee2e6;
+  color: darkgray;
+}
+
+.darkMode .contract .status span {
+  color: #59ad9e;
+  border-color: white;
+}
+
+.darkMode .contract .fet {
+  color: #6189d6;
+}
+
+.darkMode .contract .fet span {
+  color: #6189d6;
+  border-color: white;
+}
+
+.darkMode .custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #5887da !important;
+  background-color: #5887da !important;
+}
+
+.darkMode .popupBoard {
+  color: whitesmoke !important;
+  background-color: #192541 !important;
+}
+
+.darkPopup .modal-content {
+  background-color: #101525 !important;
+  color: white !important;
+  padding: 0 16px;
+}
+
+.darkPopup .modal-footer button {
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 6px 18px;
+}
+
+.darkMode.filter.dropdown-menu.show {
+  background: #1c2846;
+}
+
+.darkMode.filter .dropdown-item {
+  color: darkgray !important;
+}
+
+.darkMode.filter .dropdown-item:focus,
+.darkMode.filter .dropdown-item:hover {
+  color: white !important;
+  background-color: transparent !important;
+}
+
+.darkMode label.form-check-label {
+  color: darkgray;
+}

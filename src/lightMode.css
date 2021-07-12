@@ -1,0 +1,144 @@
+.lightMode .info-content {
+  background: white;
+  color: black;
+}
+
+.lightMode .leftDrawer i {
+  color: darkgray;
+}
+
+.lightMode .leftDrawer {
+  background: whitesmoke;
+}
+
+.lightMode .rightDrawer {
+  background: whitesmoke;
+}
+
+.lightMode .leftDrawer-values {
+  background-color: whitesmoke;
+  background: whitesmoke;
+  color: #20294a;
+}
+
+.lightMode .rightDrawer-values {
+  background-color: whitesmoke;
+  background: whitesmoke;
+  color: #20294a;
+}
+
+.lightMode .scrollbar::-webkit-scrollbar-thumb {
+  background-color: #5887da;
+}
+
+.lightMode .scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #5887da;
+}
+
+.lightMode .navbar.bg-dark {
+  background-color: #20294a !important;
+}
+
+.lightMode .searchBox h2 {
+  color: black;
+}
+
+.lightMode .btn-secondary,
+.lightMode .btn-secondary:hover {
+  color: black !important;
+  background-color: #5887da !important;
+  border-color: #5887da !important;
+}
+
+.lightMode .heading span {
+  color: grey;
+}
+
+.lightMode .selected {
+  color: #000033 !important;
+}
+
+.lightMode .formwrapper .submit-btn {
+  border-color: black !important;
+  color: #000033;
+}
+
+.lightMode .formwrapper .submit-btn:hover {
+  background-color: #5887da !important;
+  border-color: #5887da !important;
+  color: white;
+}
+
+.lightMode .formwrapper .holdColor {
+  background-color: #5887da !important;
+  border-color: #5887da !important;
+  color: white;
+}
+
+.lightMode .dropdown-item:focus,
+.lightMode .dropdown-item:hover {
+  color: white !important;
+  background-color: #5887da !important;
+}
+
+.lightMode .table thead {
+  color: #20294a;
+  font-size: 14px;
+}
+
+.lightMode .table thead th {
+  border-bottom: 2px solid #20294a;
+}
+
+.lightMode .table td {
+  border-top: 1px solid gray;
+  color: gray;
+}
+
+.lightMode .contract .status span {
+  color: #5887da;
+  border-color: white;
+}
+
+.lightMode .contract .fet {
+  color: #5887da;
+}
+
+.lightMode .contract .fet span {
+  color: #5887da;
+  border-color: black;
+}
+
+.lightMode .custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #5887da !important;
+  background-color: #5887da !important;
+}
+
+.lightMode button#dropdown-basic {
+  border-bottom: 1px solid #5887da;
+  color: gray;
+}
+
+.lightPopup .modal-content {
+  background-color: white !important;
+  color: black !important;
+  padding: 0 16px;
+}
+
+.lightPopup .modal-footer button {
+  background: transparent;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 6px 18px;
+  color: black;
+}
+
+.lightMode.filter.dropdown-menu.show {
+  background: white;
+}
+
+.lightMode.filter .dropdown-item:focus,
+.lightMode.filter .dropdown-item:hover {
+  color: darkgray !important;
+  background-color: transparent !important;
+}
